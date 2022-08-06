@@ -8,3 +8,10 @@ draw = function() {
     background(255, 255, 255);
     ellipse(200, 200, 30, 30);
 };
+// vykresluje barevnou čáru z malých puntíků tam, kde pohybuješ myší
+noStroke(); // без рамочки, треба вставити всередину, можна stroke(207, 151, 207), буде рамочка
+
+draw = function() {
+    fill(mouseX, 0, 0); // gradient
+    ellipse(mouseX, mouseY, 10, 10);
+};
